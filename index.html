@@ -1,5 +1,161 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-Hello World
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Researcher</title>
+    <!-- Using Tailwind CSS via CDN for quick, easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to add a bit of polish */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .section-heading {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
 </head>
+<body class="antialiased max-w-4xl mx-auto p-6 md:p-12">
+
+    <!-- Header Section -->
+    <header class="mb-12 flex flex-col md:flex-row items-center md:items-start gap-8">
+        <!-- Profile Picture Placeholder -->
+        <div class="w-40 h-40 rounded-full bg-slate-300 flex-shrink-0 flex items-center justify-center text-slate-500 overflow-hidden">
+            <!-- Replace the src with your actual image URL -->
+            <img src="https://via.placeholder.com/160" alt="Profile Picture" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="text-center md:text-left">
+            <h1 class="text-4xl font-bold text-slate-900 mb-2">Dr. Your Name</h1>
+            <p class="text-xl text-slate-600 mb-4">Postdoctoral Researcher in [Your Field]</p>
+            <p class="mb-4">
+                <strong>Institution:</strong> [University or Organization Name]<br>
+                <strong>Email:</strong> <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline">your.email@example.com</a>
+            </p>
+            
+            <!-- Social Links -->
+            <div class="flex justify-center md:justify-start gap-4 text-blue-600">
+                <a href="https://scholar.google.com" target="_blank" class="hover:underline">Google Scholar</a>
+                <a href="https://github.com/yourusername" target="_blank" class="hover:underline">GitHub</a>
+                <a href="https://twitter.com/yourhandle" target="_blank" class="hover:underline">Twitter/X</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:underline">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation (Optional, useful if the page gets long) -->
+    <nav class="mb-12 bg-white p-4 rounded-lg shadow-sm border border-slate-100 flex justify-center md:justify-start gap-6 font-medium">
+        <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+        <a href="#publications" class="hover:text-blue-600 transition-colors">Publications</a>
+        <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+        <a href="#cv" class="hover:text-blue-600 transition-colors">CV</a>
+    </nav>
+
+    <main class="space-y-16">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="text-2xl font-bold text-slate-900 section-heading">About Me</h2>
+            <div class="prose prose-slate max-w-none space-y-4">
+                <p>
+                    I am a researcher specializing in [Your Specific Area of Focus]. My work primarily involves [briefly describe your methodology or primary research questions]. 
+                </p>
+                <p>
+                    Currently, I am working on [mention a current project or grant]. Previously, I completed my Ph.D. at [University Name] under the supervision of [Advisor's Name], where my dissertation focused on [Dissertation Topic].
+                </p>
+                <p>
+                    I am passionate about [mention a broader professional interest, e.g., open science, mentoring, science communication].
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2 class="text-2xl font-bold text-slate-900 section-heading">Selected Publications</h2>
+            <p class="mb-6 text-sm text-slate-500">For a full list, please see my <a href="#" class="text-blue-600 hover:underline">Google Scholar profile</a>.</p>
+            
+            <ul class="space-y-6">
+                <!-- Publication Item -->
+                <li class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-lg text-slate-900 mb-1">
+                        <a href="#" class="hover:text-blue-600">Title of Your Most Recent Outstanding Paper</a>
+                    </h3>
+                    <p class="text-slate-600 mb-2">
+                        <strong>Your Name</strong>, Co-Author One, Co-Author Two.
+                    </p>
+                    <p class="italic text-slate-700 mb-2">Journal of Groundbreaking Research (2026)</p>
+                    <div class="flex gap-3 text-sm">
+                        <a href="#" class="inline-block px-3 py-1 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors">PDF</a>
+                        <a href="#" class="inline-block px-3 py-1 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors">Code</a>
+                        <a href="#" class="inline-block px-3 py-1 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors">Dataset</a>
+                    </div>
+                </li>
+
+                <!-- Publication Item -->
+                <li class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-lg text-slate-900 mb-1">
+                        <a href="#" class="hover:text-blue-600">Another Very Important Paper Title</a>
+                    </h3>
+                    <p class="text-slate-600 mb-2">
+                        Co-Author One, <strong>Your Name</strong>.
+                    </p>
+                    <p class="italic text-slate-700 mb-2">International Conference on Important Things (2025)</p>
+                    <div class="flex gap-3 text-sm">
+                        <a href="#" class="inline-block px-3 py-1 bg-slate-100 rounded-full hover:bg-slate-200 transition-colors">PDF</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="text-2xl font-bold text-slate-900 section-heading">Open Source Projects & Software</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project Item -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 h-full flex flex-col">
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">
+                        <a href="#" class="hover:text-blue-600">ProjectName</a>
+                    </h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        A Python library for analyzing specific types of data. It implements the novel algorithms described in our 2025 paper.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:underline font-medium text-sm">View on GitHub &rarr;</a>
+                </div>
+
+                <!-- Project Item -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 h-full flex flex-col">
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">
+                        <a href="#" class="hover:text-blue-600">DataTool</a>
+                    </h3>
+                    <p class="text-slate-600 mb-4 flex-grow">
+                        A web-based visualization tool that allows users to interactively explore the dataset we collected for [Project X].
+                    </p>
+                    <a href="#" class="text-blue-600 hover:underline font-medium text-sm">View Demo &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section (Optional, could just link to a PDF in the header) -->
+        <section id="cv" class="bg-slate-50 p-8 rounded-lg border border-slate-200 text-center">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Curriculum Vitae</h2>
+            <p class="mb-6">A comprehensive overview of my academic background, professional experience, and full publication list.</p>
+            <a href="path/to/your-cv.pdf" target="_blank" class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
+                Download PDF CV
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Your Name. Built with HTML and Tailwind CSS.</p>
+        <p class="mt-2">Hosted on <a href="https://pages.github.com/" class="hover:underline">GitHub Pages</a>.</p>
+    </footer>
+
+</body>
 </html>
